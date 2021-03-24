@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="shortcut icon" href="src/img/login.svg" type="image/x-icon" />
+    <title>Intranet unheval</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <picture class="brand__logo">
+          <img
+            class="brand__logo-img"
+            src="src/img/logo-unheval.png"
+            alt="Logo de la universidad"
+          />
+        </picture>
+        <div class="brand__text">
+          <h2 class="brand__title">UNHEVAL</h2>
+          <p>Universidad Nacional Hermilio Valdizán</p>
+        </div>
+      </div>
+      <div class="site">
+        <p>INTRANET: ALUMNOS</p>
+      </div>
+    </header>
+    <main class="form__container">
+      <picture class="form__slider">
+        <ul class="form__slider-list">
+          <li class="form__slider-item">
+            <img
+              class="form__slider-image"
+              loading="lazy"
+              src="src/img/01.jpg"
+              alt="University"
+            />
+          </li>
+          <li class="form__slider-item">
+            <img
+              class="form__slider-image"
+              loading="lazy"
+              src="src/img/02.jpg"
+              alt="University"
+            />
+          </li>
+          <li class="form__slider-item">
+            <img
+              class="form__slider-image"
+              loading="lazy"
+              src="src/img/03.jpg"
+              alt="University"
+            />
+          </li>
+          <li class="form__slider-item">
+            <img
+              class="form__slider-image"
+              loading="lazy"
+              src="src/img/04.jpg"
+              alt="University"
+            />
+          </li>
+        </ul>
+      </picture>
+      <form class="form" id="form">
+        <h2 class="form__title">Inicia sesión</h2>
+        <!-- Grupo: User -->
+        <div class="form__group" id="group__user">
+          <label for="user" class="form__label">Usuario</label>
+          <div class="form__group-input">
+            <input
+              class="form__input"
+              type="text"
+              name="user"
+              id="user"
+              placeholder="2020462456"
+            />
+            <i class="form__check-state fas fa-times-circle"></i>
+          </div>
+          <p class="form__input-error">
+            El usuario es su codigo universitario, sino tiene uno solicitelo en
+            las oficinas de la UNHEVAL
+          </p>
+        </div>
+
+        <!-- Grupo: Password -->
+        <div class="form__group" id="group_password">
+          <label for="password" class="form__label">Contraseña</label>
+          <div class="form__group-input">
+            <input
+              type="password"
+              class="form__input"
+              name="password"
+              id="password"
+            />
+            <i class="form__check-state fas fa-times-circle"></i>
+          </div>
+          <p class="form__input-error">Contraseña incorrecta</p>
+        </div>
+
+        <!-- Grupo: Parent or representative -->
+        <div class="form__group-parent" id="group_parent">
+          <label class="form__label">
+            <input
+              class="form__checkbox"
+              type="checkbox"
+              name="parent"
+              id="parent"
+            />
+            Soy padre o apoderado
+          </label>
+        </div>
+
+        <div class="form__group form__group-btn-send">
+          <button type="submit" class="form__btn">Enviar</button>
+        </div>
+
+        <div class="form__message" id="form__message">
+          <p>
+            <i class="fas fa-exclamation-circle"></i>
+            Si olvidó la contraseña <a href="#">ingrese aqui</a>
+          </p>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      ©2021 Universidad Nacional Hermilio Valdizán de Huánuco. Reservados todos
+      los derechos
+    </footer>
+    <script src="src/js/login.js"></script>
+  </body>
+</html>

@@ -74,7 +74,7 @@
           </li>
         </ul>
       </picture>
-      <form class="form" id="form">
+      <form class="form" id="login">
         <h2 class="form__title">Inicia sesión</h2>
         <!-- Grupo: User -->
         <div class="form__group" id="group__user">
@@ -85,18 +85,18 @@
               type="text"
               name="user"
               id="user"
-              placeholder="2020462456"
+              placeholder="0000000000"
             />
             <i class="form__check-state fas fa-times-circle"></i>
           </div>
           <p class="form__input-error">
-            El usuario es su codigo universitario, sino tiene uno solicitelo en
-            las oficinas de la UNHEVAL
+            El usuario es su codigo universitario de 10 dígitos, sino tiene uno
+            solicitelo en las oficinas de la UNHEVAL
           </p>
         </div>
 
         <!-- Grupo: Password -->
-        <div class="form__group" id="group_password">
+        <div class="form__group" id="group__password">
           <label for="password" class="form__label">Contraseña</label>
           <div class="form__group-input">
             <input
@@ -107,11 +107,11 @@
             />
             <i class="form__check-state fas fa-times-circle"></i>
           </div>
-          <p class="form__input-error">Contraseña incorrecta</p>
+          <p class="form__input-error">Formato de contraseña incorrecto</p>
         </div>
 
         <!-- Grupo: Parent or representative -->
-        <div class="form__group-parent" id="group_parent">
+        <div class="form__group-parent" id="group__parent">
           <label class="form__label">
             <input
               class="form__checkbox"

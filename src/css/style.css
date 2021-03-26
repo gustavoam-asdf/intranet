@@ -2,9 +2,9 @@
 
 :root {
   --turquoise: #038ae6;
-  --light-blue: #a3c4d6;
   --blue: #2058b5;
   --dark-blue: #000261;
+  --light-blue: #a3c4d6;
   --red: #bb2929;
   --wine: #6c0000;
   --white: #ebf9ff;
@@ -180,7 +180,7 @@ body {
   display: block;
   font-size: 1.2em;
   font-weight: 600;
-  padding: 0.7em;
+  padding: 0.4em;
   cursor: pointer;
   transition: 0.3s ease all;
 }
@@ -269,19 +269,19 @@ body {
 }
 
 .form__checkbox + i:after {
-  content: 'ON';
+  content: '✔';
   position: absolute;
   font-size: 0.45em;
   line-height: 2.1em;
   color: var(--white);
   top: 0;
-  left: 0.3em;
+  left: 0.7em;
   opacity: 0;
   transition: all 0.25s ease 0.25s;
 }
 
 .form__group-parent:hover i {
-  background: var(--light-blue);
+  background: var(--blue);
 }
 
 .form__checkbox:checked + i {
@@ -355,17 +355,19 @@ body {
   color: var(--red);
 }
 
+.form__group-incorrect .form__input {
+  border-color: var(--red);
+  color: var(--red);
+}
+
 .form__group-incorrect .form__input-error {
   display: block;
+  color: var(--red);
 }
 
 .form__group-incorrect .form__check-state {
   color: var(--red);
   opacity: 1;
-}
-
-.form__group-incorrect .form__input {
-  border-color: var(--red);
 }
 
 /***********************************************************/

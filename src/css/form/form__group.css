@@ -1,0 +1,31 @@
+@import url(./form__label.css);
+@import url(./form__group-input.css);
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.form__group-correct .form__check-state {
+  color: var(--green);
+  opacity: 1;
+}
+
+.form__group-correct .form__input-error {
+  display: none;
+}
+
+.form__group-incorrect .form__label {
+  color: var(--red);
+}
+
+.form__group-incorrect .form__input {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.form__group-incorrect .form__input-error {
+  display: block;
+  color: var(--red);
+}
+
+.form__group-incorrect .form__check-state {
+  color: var(--red);
+  opacity: 1;
+}

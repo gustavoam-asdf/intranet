@@ -1,0 +1,31 @@
+.brand {
+  display: flex;
+}
+
+.brand__logo-img,
+.brand__text {
+  height: var(--header-height);
+}
+
+.brand__logo-img {
+  padding: 0.4em 0;
+}
+
+.brand__text {
+  padding: 0.25em 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.brand__text h2,
+.brand__text p {
+  line-height: 1em;
+  margin: 0;
+}
+
+@media screen and (max-width: 685px) {
+  .brand__text {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+/***********************************************************/
+/* Footer */
+/***********************************************************/
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: calc(var(--header-height) / 2);
+  width: 100%;
+  z-index: var(--z-index-10);
+  background-color: var(--turquoise);
+  color: var(--white);
+  line-height: calc(var(--header-height) / 2);
+  text-align: center;
+}
+
+@media screen and (max-width: 685px) {
+  .footer {
+    height: calc(var(--header-height) * 2 / 2);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .footer {
+    height: calc(var(--header-height) * 3 / 2);
+  }
+}

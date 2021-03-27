@@ -1,0 +1,59 @@
+/***********************************************************/
+/* Form */
+/***********************************************************/
+@import url(./form__slider.css);
+@import url(./form__group.css);
+@import url(./form__group-checkbox.css);
+@import url(./form__group-btn-send.css);
+@import url(./form__message.css);
+
+.form__container {
+  color: var(--dark-blue);
+  z-index: var(--z-index-0);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.form {
+  margin: 1em;
+  width: 25em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1em;
+}
+
+.form__title {
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  .form__container {
+    display: block;
+  }
+
+  .form {
+    margin: auto;
+    padding: 1em 0 3em;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .form__container {
+    height: 100%;
+  }
+
+  .form {
+    padding: 1em 0 4em;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .form {
+    padding: 0 0 6em;
+  }
+}

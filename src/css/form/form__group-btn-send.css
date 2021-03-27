@@ -1,0 +1,29 @@
+.form__group-btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.1em;
+}
+
+.form__btn {
+  height: 2.5em;
+  line-height: 2.5em;
+  width: 80%;
+  background: var(--dark-blue);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+.form__btn:hover {
+  box-shadow: 0.25em 0 2em #a6acff;
+}
+
+@media screen and (max-width: 950px) {
+  .form__btn {
+    width: 100%;
+  }
+}

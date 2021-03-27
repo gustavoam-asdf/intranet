@@ -1,0 +1,14 @@
+.form__label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.4em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+@media screen and (max-width: 950px) {
+  .form__label {
+    padding: 0.3em;
+  }
+}

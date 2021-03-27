@@ -1,0 +1,15 @@
+.site {
+  height: var(--header-height);
+}
+
+.site p {
+  line-height: var(--header-height);
+  margin: 0;
+}
+
+@media screen and (max-width: 270px) {
+  .site p {
+    text-align: right;
+    line-height: calc(var(--header-height) / 2);
+  }
+}

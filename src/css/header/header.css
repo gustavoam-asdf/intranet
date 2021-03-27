@@ -1,0 +1,16 @@
+@import url(./brand.css);
+@import url(./site.css);
+
+.header {
+  position: fixed;
+  top: 0;
+  height: var(--header-height);
+  width: 100%;
+  padding: 0 9.5%;
+  color: var(--white);
+  background-color: var(--turquoise);
+  z-index: var(--z-index-10);
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}

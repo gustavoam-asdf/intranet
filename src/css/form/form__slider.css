@@ -1,0 +1,60 @@
+.form__slider {
+  display: block;
+  margin: 1em;
+  overflow: hidden;
+  width: 50em;
+}
+
+.form__slider-list {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+.form__slider-item {
+  width: 100%;
+}
+
+.form__slider-image {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .form__slider {
+    margin: 1.1em auto;
+    width: 90%;
+  }
+}

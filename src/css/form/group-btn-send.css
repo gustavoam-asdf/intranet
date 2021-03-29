@@ -7,7 +7,7 @@
 
 .form__btn {
   height: 2.5em;
-  line-height: 2.5em;
+  line-height: 1em;
   width: 80%;
   background: var(--dark-blue);
   color: var(--white);

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/dashboard.css" />
+    <link rel="shortcut icon" href="src/img/login.svg" type="image/x-icon" />
+    <title>Intranet unheval</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <picture class="brand__logo">
+          <img
+            class="brand__logo-img"
+            src="src/img/logo-unheval.png"
+            alt="Logo de la universidad"
+          />
+        </picture>
+        <div class="brand__text">
+          <h2>UNHEVAL</h2>
+          <p>Universidad Nacional Hermilio Valdizán</p>
+        </div>
+      </div>
+      <div class="site">
+        <p><b>INTRANET:</b> ALUMNOS</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="dashboard__container dashboard__container-collapsed">
+        <aside id="sidemenu" class="sidemenu sidemenu-collapsed">
+          <!-- Button -->
+          <header class="sidemenu__header">
+            <i
+              id="sidemenu__button"
+              class="sidemenu__header-button fa fa-bars"
+            ></i>
+          </header>
+
+          <!-- Profile -->
+          <div class="sidemenu__profile">
+            <picture class="sidemenu__profile-photo">
+              <img
+                src="https://drive.google.com/uc?export=download&id=1Q8YQK-tBnjkVhnMF_ZxvOctD1x_DLb59"
+                alt="User photo"
+              />
+            </picture>
+            <div class="sidemenu__profile-name">
+              <p>Gustavo Adolfo Atencio Mauricio</p>
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <nav class="sidemenu__menu-container">
+            <ul class="sidemenu__menu">
+              <li class="sideitem" id="sideitem__data">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-id-card"></i>
+                  <span class="sideitem__info-expanded">Datos Personales</span>
+                  <span class="sideitem__info-collapsed">Datos</span>
+                </a>
+              </li>
+              <li class="sideitem" id="sideitem__schedule">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-calendar-alt"></i>
+                  <span class="sideitem__info-expanded">
+                    Horario / Asistencia
+                  </span>
+                  <span class="sideitem__info-collapsed"> Horario </span>
+                </a>
+              </li>
+              <li class="sideitem" id="sideitem__inscriptions">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-file-signature"></i>
+                  <span class="sideitem__info-expanded">Inscripciones</span>
+                  <span class="sideitem__info-collapsed">Matrícula</span>
+                </a>
+              </li>
+              <li class="sideitem" id="sideitem__formalities">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-chalkboard-teacher"></i>
+                  <span class="sideitem__info-expanded">Trámites</span>
+                  <span class="sideitem__info-collapsed">Trámites</span>
+                </a>
+              </li>
+              <li class="sideitem" id="sideitem__record">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-address-book"></i>
+                  <span class="sideitem__info-expanded"
+                    >Historial Académico</span
+                  >
+                  <span class="sideitem__info-collapsed">Historial</span>
+                </a>
+              </li>
+              <li class="sideitem" id="sideitem__payments">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-receipt"></i>
+                  <span class="sideitem__info-expanded">Pagos / Deudas</span>
+                  <span class="sideitem__info-collapsed">Pagos</span>
+                </a>
+              </li>
+              <li class="sideitem" id="sideitem__tutoring">
+                <a href="#">
+                  <i class="sideitem__icon fa fa-school"></i>
+                  <span class="sideitem__info-expanded">
+                    Asesoría / Tutoría
+                  </span>
+                  <span class="sideitem__info-collapsed">Asesoría</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <div class="navigator"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      ©2021 Universidad Nacional Hermilio Valdizán de Huánuco. Reservados todos
+      los derechos
+    </footer>
+    <script src="src/js/dashboard.js"></script>
+  </body>
+</html>

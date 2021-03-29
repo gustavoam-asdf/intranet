@@ -1,0 +1,43 @@
+/*********************************/
+/* Side menu expanded */
+/*********************************/
+
+.sidemenu__profile {
+  padding: 1em 0;
+  border-bottom: var(--border);
+}
+
+.sidemenu__profile-photo img {
+  display: block;
+  width: 4em;
+  border: var(--border);
+  border-radius: 50%;
+  margin: auto;
+  user-select: none;
+  transition: 0.5s ease all;
+}
+
+.sidemenu__profile-name {
+  user-select: none;
+}
+
+.sidemenu__profile-name p {
+  margin: 0.75em 0 0;
+  text-align: center;
+}
+
+/*********************************/
+/* Side menu collapsed */
+/*********************************/
+
+.sidemenu-collapsed .sidemenu__profile {
+  padding: 0.5em 0;
+}
+
+.sidemenu-collapsed .sidemenu__profile-photo img {
+  width: calc(var(--width-collapsed) * 0.8);
+}
+
+.sidemenu-collapsed .sidemenu__profile-name {
+  display: none;
+}

@@ -1,0 +1,42 @@
+@import url(./style.css);
+@import url(./header/header.css);
+@import url(./footer/footer.css);
+@import url(./sidemenu/sidemenu.css);
+
+/*********************************/
+/* Side menu expanded */
+/*********************************/
+
+.dashboard__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-left: var(--width);
+  transition: 0.3s ease-in-out all;
+}
+
+/*********************************/
+/* Side menu collapsed */
+/*********************************/
+
+.dashboard__container-collapsed {
+  padding-left: var(--width-collapsed);
+}
+
+.sidemenu-collapsed {
+  width: var(--width-collapsed);
+}
+
+/* Footer 2 lines */
+@media screen and (max-width: 685px) {
+  .sidemenu {
+    bottom: calc(var(--footer-height) * 2);
+  }
+}
+
+/* Footer 3 lines */
+@media screen and (max-width: 340px) {
+  .sidemenu {
+    bottom: calc(var(--footer-height) * 3);
+  }
+}

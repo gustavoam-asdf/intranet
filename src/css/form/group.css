@@ -1,5 +1,5 @@
-@import url(./form__label.css);
-@import url(./form__group-input.css);
+@import url(./label.css);
+@import url(./group-input.css);
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 .form__group-correct .form__check-state {

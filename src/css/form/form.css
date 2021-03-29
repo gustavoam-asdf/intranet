@@ -1,11 +1,11 @@
 /***********************************************************/
 /* Form */
 /***********************************************************/
-@import url(./form__slider.css);
-@import url(./form__group.css);
-@import url(./form__group-checkbox.css);
-@import url(./form__group-btn-send.css);
-@import url(./form__message.css);
+@import url(./slider.css);
+@import url(./group.css);
+@import url(./group-checkbox.css);
+@import url(./group-btn-send.css);
+@import url(./message.css);
 
 .form__container {
   color: var(--dark-blue);

@@ -89,6 +89,7 @@ const loginHandler = $login => {
       document
         .querySelectorAll('.form__group')
         .forEach(group => group.classList.remove('form__group-correct'))
+      location.href = '/dashboard.html'
     } else {
       modifyClass('form__message', add, 'form__message-active')
     }

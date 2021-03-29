@@ -1,0 +1,23 @@
+.sidemenu__header {
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidemenu__header-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--width-collapsed);
+  height: var(--width-collapsed);
+  transition: 0.3s ease all;
+}
+
+.sidemenu__header-button::before {
+  font-size: 1.3em;
+}
+
+.sidemenu__header-button:hover {
+  background-color: var(--blue);
+}

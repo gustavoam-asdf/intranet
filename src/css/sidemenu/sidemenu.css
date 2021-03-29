@@ -1,0 +1,26 @@
+@import url(./header.css);
+@import url(./profile.css);
+@import url(./menu.css);
+
+:root {
+  --width: 13em;
+  --width-collapsed: 3em;
+  --border: 1px solid var(--light-blue);
+}
+
+/*********************************/
+/* Side menu expanded */
+/*********************************/
+
+.sidemenu {
+  background-color: var(--turquoise);
+  position: fixed;
+  left: 0;
+  top: var(--header-height);
+  bottom: var(--footer-height);
+  width: var(--width);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  color: var(--white);
+  transition: 0.4s ease-in-out all;
+}

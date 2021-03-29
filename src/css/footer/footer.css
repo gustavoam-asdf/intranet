@@ -4,23 +4,26 @@
 .footer {
   position: fixed;
   bottom: 0;
-  height: calc(var(--header-height) / 2);
+  height: var(--footer-height);
   width: 100%;
   z-index: var(--z-index-10);
   background-color: var(--turquoise);
   color: var(--white);
-  line-height: calc(var(--header-height) / 2);
+  line-height: var(--footer-height);
   text-align: center;
+  transition: 0.3s ease all;
 }
 
+/* Footer 2 lines */
 @media screen and (max-width: 685px) {
   .footer {
-    height: calc(var(--header-height) * 2 / 2);
+    height: calc(var(--footer-height) * 2);
   }
 }
 
+/* Footer 3 lines */
 @media screen and (max-width: 340px) {
   .footer {
-    height: calc(var(--header-height) * 3 / 2);
+    height: calc(var(--footer-height) * 3);
   }
 }

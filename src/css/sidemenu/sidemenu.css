@@ -2,12 +2,6 @@
 @import url(./profile.css);
 @import url(./menu.css);
 
-:root {
-  --width: 13em;
-  --width-collapsed: 3em;
-  --border: 1px solid var(--light-blue);
-}
-
 /*********************************/
 /* Side menu expanded */
 /*********************************/
@@ -23,4 +17,18 @@
   border-bottom: var(--border);
   color: var(--white);
   transition: 0.4s ease-in-out all;
+}
+
+/* Footer 2 lines */
+@media screen and (max-width: 685px) {
+  .sidemenu {
+    bottom: calc(var(--footer-height) * 2);
+  }
+}
+
+/* Footer 3 lines */
+@media screen and (max-width: 340px) {
+  .sidemenu {
+    bottom: calc(var(--footer-height) * 3);
+  }
 }

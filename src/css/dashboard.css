@@ -3,6 +3,12 @@
 @import url(./footer/footer.css);
 @import url(./sidemenu/sidemenu.css);
 
+:root {
+  --width: 15em;
+  --width-collapsed: 3em;
+  --border: 1px solid var(--light-blue);
+}
+
 /*********************************/
 /* Side menu expanded */
 /*********************************/
@@ -25,18 +31,4 @@
 
 .sidemenu-collapsed {
   width: var(--width-collapsed);
-}
-
-/* Footer 2 lines */
-@media screen and (max-width: 685px) {
-  .sidemenu {
-    bottom: calc(var(--footer-height) * 2);
-  }
-}
-
-/* Footer 3 lines */
-@media screen and (max-width: 340px) {
-  .sidemenu {
-    bottom: calc(var(--footer-height) * 3);
-  }
 }

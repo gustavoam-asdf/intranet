@@ -1,4 +1,4 @@
-function createCSSLink(href, id) {
+const createCSSLink = (href, id) => {
   if (document.getElementById(id)) return
   const styles = document.createElement('link')
   styles.setAttribute('id', id)

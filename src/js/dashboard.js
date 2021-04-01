@@ -1,4 +1,5 @@
 import './components/preloader.js'
+import getPage from './functions/getPage.js'
 
 // Expand and collapse sidemenu
 document.getElementById('sidemenu__button').addEventListener('click', evt => {
@@ -18,10 +19,11 @@ document.querySelectorAll('.sideitem a').forEach((pageLink, i, pagesLinks) =>
     evt.preventDefault()
     const preloader = document.createElement('pre-loader')
     document.querySelector('.main').appendChild(preloader)
-    setTimeout(() => {
-      preloader.remove()
-    }, 1000)
-
     highlightItemActive(pageLink, pagesLinks, 'sideitem-active')
+    setTimeout(async () => {
+      const page = await getPage(pageLink.getAttribute('href'))
+      preloader.remove()
+      document.getElementById('pages').innerHTML = page
+    }, Math.random() * 5000)
   })
 )

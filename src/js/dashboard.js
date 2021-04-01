@@ -6,7 +6,8 @@ const preloader = document.createElement('pre-loader')
 let currentPage = {
   name: 'dashboard',
   text: '',
-  styleLink: {}
+  styleLink: {},
+  scriptLink: {}
 }
 
 // Expand and collapse sidemenu
@@ -28,7 +29,10 @@ document.querySelectorAll('.sideitem a').forEach(($pageLink, i, $pagesLinks) =>
     highlightItemActive($pageLink, $pagesLinks, 'sideitem-active')
     if (currentPage.name !== $pageLink.getAttribute('href').replace('#', '')) {
       setTimeout(async () => {
-        if (currentPage.name !== 'dashboard') currentPage.styleLink.remove()
+        if (currentPage.name !== 'dashboard') {
+          currentPage.styleLink.remove()
+          currentPage.scriptLink.remove()
+        }
         const pageLink = $pageLink.getAttribute('href').replace('#', '')
         currentPage = await getPage(pageLink)
         renderPage(currentPage, preloader, document.getElementById('pages'))

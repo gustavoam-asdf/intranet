@@ -1,4 +1,5 @@
 import createCSSLink from './createCSSLink.js'
+import createJSLink from './createJSLink.js'
 
 const getPage = async page => {
   const readPage = await fetch(`/pages/${page}.html`)
@@ -6,7 +7,8 @@ const getPage = async page => {
   return {
     name: page,
     text: await readPage.text(),
-    styleLink: createCSSLink(`/src/css/pages/${page}.css`)
+    styleLink: createCSSLink(`/src/css/pages/${page}.css`),
+    scriptLink: createJSLink(`/src/js/pages/${page}.js`)
   }
 }
 

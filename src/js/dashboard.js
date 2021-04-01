@@ -46,3 +46,12 @@ document.querySelectorAll('.sideitem a').forEach(($pageLink, i, $pagesLinks) =>
     }
   })
 )
+
+// Check if location have and a sitelink
+addEventListener('DOMContentLoaded', evt => {
+  if (location.href.indexOf('#') === -1) return
+  const pageLink = location.href.slice(location.href.indexOf('#'))
+  document.querySelectorAll('.sideitem a').forEach(link => {
+    if (link.getAttribute('href') === pageLink) link.click()
+  })
+})

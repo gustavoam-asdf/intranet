@@ -5,7 +5,7 @@ import renderPage from './functions/renderPage.js'
 const preloader = document.createElement('pre-loader')
 let currentPage = {
   name: 'dashboard',
-  text: '',
+  html: '',
   styleLink: {},
   scriptLink: {}
 }

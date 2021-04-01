@@ -3,7 +3,10 @@ import createCSSLink from '../functions/createCSSLink.js'
 class Preloader extends HTMLElement {
   constructor() {
     super()
-    createCSSLink('src/css/preloader/preloader.css', 'preloader')
+    this.styleLink = createCSSLink(
+      '/src/css/preloader/preloader.css',
+      'preloader'
+    )
   }
 
   connectedCallback() {

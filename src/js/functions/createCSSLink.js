@@ -5,6 +5,7 @@ const createCSSLink = (href, id) => {
   styles.setAttribute('rel', 'stylesheet')
   styles.setAttribute('href', href)
   document.head.appendChild(styles)
+  return styles
 }
 
 export default createCSSLink

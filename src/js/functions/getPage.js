@@ -7,8 +7,8 @@ const getPage = async page => {
   return {
     name: page,
     html: await readPage.text(),
-    styleLink: createCSSLink(`/src/css/pages/${page}.css`),
-    scriptLink: createJSLink(`/src/js/pages/${page}.js`)
+    styleLink: createCSSLink(`/intranet/src/css/pages/${page}.css`),
+    scriptLink: createJSLink(`/intranet/src/js/pages/${page}.js`)
   }
 }
 

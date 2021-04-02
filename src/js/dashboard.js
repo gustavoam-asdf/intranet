@@ -28,7 +28,7 @@ document.querySelectorAll('.sideitem a').forEach(($pageLink, i, $pagesLinks) =>
     document.querySelector('.main').appendChild(preloader)
     highlightItemActive($pageLink, $pagesLinks, 'sideitem-active')
     if (currentPage.name !== $pageLink.getAttribute('href').replace('#', '')) {
-      setTimeout(async () => {
+        if (currentPage.name !== 'dashboard') {
           currentPage.styleLink.remove()
           currentPage.scriptLink.remove()
         }

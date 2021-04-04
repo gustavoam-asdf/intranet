@@ -1,0 +1,40 @@
+@import url(../form/form.css);
+
+.data__container {
+  max-height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  width: 90%;
+  height: max-content;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+.form__title {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 950px) {
+  .form {
+    margin: 1em;
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .form__title {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .form {
+    padding: 0;
+  }
+
+  .form__fieldset {
+    grid-template-columns: 1fr;
+  }
+}

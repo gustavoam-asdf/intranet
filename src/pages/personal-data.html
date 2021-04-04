@@ -1,4 +1,481 @@
 <article class="data__container">
-  <h1 class="page__title">Datos personales</h1>
-  <form class="form"></form>
+  <form class="form">
+    <h2 class="form__title">Datos personales</h2>
+
+    <!-- Alumn data -->
+    <div class="form__fieldset" id="alumn__data">
+      <header class="form__fieldset-header">
+        <h3 class="form__fieldset-title">Alumno</h3>
+
+        <!-- Button to modify fieldset -->
+        <button type="button" class="form__fieldset-edit" id="btn__alumn__data">
+          <i class="fa fa-edit"></i>
+        </button>
+      </header>
+
+      <!-- Grupo: DNI -->
+      <div class="form__group" id="group__dni">
+        <label for="dni" class="form__label">DNI</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="dni"
+            id="dni"
+            placeholder="71661497"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">El DNI debe ser de 8 dígitos</p>
+      </div>
+
+      <!-- Grupo: Génder -->
+      <div class="form__group" id="group__gender">
+        <label for="gender" class="form__label">Género</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="gender"
+            id="gender"
+            placeholder="Masculino"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">
+          Los géneros aceptados son: masculino, femenino y otros
+        </p>
+      </div>
+
+      <!-- Grupo:  Civil status-->
+      <div class="form__group" id="group__civil-status">
+        <label for="civil-status" class="form__label">Estado civil</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="civil-status"
+            id="civil-status"
+            placeholder="Soltero"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">
+          Los estados civiles aceptados son: soltero, casado, viudo y divorciado
+        </p>
+      </div>
+
+      <!-- Grupo: Language -->
+      <div class="form__group" id="group__language">
+        <label for="langroup__language" class="form__label">
+          Lengua materna
+        </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="langroup__language"
+            id="langroup__language"
+            placeholder="Español"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">
+          El nombre de la lengua materna solo debe contener letras
+        </p>
+      </div>
+
+      <!-- Grupo: Email -->
+      <div class="form__group" id="group__email">
+        <label for="email" class="form__label">Correo electrónico</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="atencio361@hotmail.com"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Formato de correo electrónico inválido</p>
+      </div>
+
+      <!-- Grupo: Phone -->
+      <div class="form__group" id="group__phone">
+        <label for="phone" class="form__label">Teléfono</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="987654321"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">
+          El número de teléfono debe ser de 9 dígitos
+        </p>
+      </div>
+    </div>
+
+    <!-- Highschool of origin -->
+    <div class="form__fieldset" id="highschool">
+      <header class="form__fieldset-header">
+        <h3 class="form__fieldset-title">Colegio de procedencia</h3>
+
+        <!-- Button to modify fieldset -->
+        <button type="button" class="form__fieldset-edit" id="btn__highschool">
+          <i class="fa fa-edit"></i>
+        </button>
+      </header>
+
+      <!-- Grupo: Region -->
+      <div class="form__group" id="group__highschool__region">
+        <label for="highschool__region" class="form__label">Departamento</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="highschool__region"
+            id="highschool__region"
+            placeholder="Huánuco"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Departamento no encontrado</p>
+      </div>
+
+      <!-- Grupo: Province -->
+      <div class="form__group" id="group__highschool__province">
+        <label for="highschool__province" class="form__label">Provincia</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="highschool__province"
+            id="highschool__province"
+            placeholder="Huánuco"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Provincia no encontrada</p>
+      </div>
+
+      <!-- Grupo:  District-->
+      <div class="form__group" id="group__highschool__district">
+        <label for="highschool__district" class="form__label">Distrito</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="highschool__district"
+            id="highschool__district"
+            placeholder="Amarilis"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Distrito no encontrado</p>
+      </div>
+
+      <!-- Grupo: Highschool name -->
+      <div class="form__group" id="group__highschool__name">
+        <label for="highschool__name" class="form__label">
+          Colegio(I.E.)
+        </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="highschool__name"
+            id="highschool__name"
+            placeholder="San Agustín"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Colegio no encontrado</p>
+      </div>
+
+      <!-- Grupo: Graduation year -->
+      <div class="form__group" id="group__graduation__year">
+        <label for="graduation__year" class="form__label">
+          Año de egreso
+        </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="graduation__year"
+            id="graduation__year"
+            placeholder="2018"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Colegio no encontrado</p>
+      </div>
+    </div>
+
+    <!-- Place and date of birth -->
+    <div class="form__fieldset" id="place__birthdate">
+      <header class="form__fieldset-header">
+        <h3 class="form__fieldset-title">Lugar y fecha de nacimiento</h3>
+
+        <!-- Button to modify fieldset -->
+        <button
+          type="button"
+          class="form__fieldset-edit"
+          id="btn__place__birthdate"
+        >
+          <i class="fa fa-edit"></i>
+        </button>
+      </header>
+
+      <!-- Grupo: Region -->
+      <div class="form__group" id="group__region">
+        <label for="region" class="form__label">Departamento</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="region"
+            id="region"
+            placeholder="Huánuco"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Departamento no encontrado</p>
+      </div>
+
+      <!-- Grupo: Province -->
+      <div class="form__group" id="group__province">
+        <label for="province" class="form__label">Provincia</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="province"
+            id="province"
+            placeholder="Huánuco"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Provincia no encontrada</p>
+      </div>
+
+      <!-- Grupo:  District-->
+      <div class="form__group" id="group__district">
+        <label for="district" class="form__label">Distrito</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="district"
+            id="district"
+            placeholder="Amarilis"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Distrito no encontrado</p>
+      </div>
+
+      <!-- Grupo: Date of birth -->
+      <div class="form__group" id="group__birthdate">
+        <label for="birthdate" class="form__label"> Fecha de nacimiento </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="date"
+            name="birthdate"
+            id="birthdate"
+            placeholder="17/04/2002"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Formato de fecha incorrecto</p>
+      </div>
+    </div>
+
+    <!-- Entry and current situation -->
+    <div class="form__fieldset" id="entry__situation">
+      <header class="form__fieldset-header">
+        <h3 class="form__fieldset-title">Ingreso y situation actual</h3>
+      </header>
+
+      <!-- Grupo: Date of entry -->
+      <div class="form__group" id="group__entry__date">
+        <label for="entry__date" class="form__label">Fecha de ingreso</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="entry__date"
+            id="entry__date"
+            placeholder="03/03/2019"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+      </div>
+
+      <!-- Grupo: Admission mode -->
+      <div class="form__group" id="group__addmission__mode">
+        <label for="addmission__mode" class="form__label">
+          Modalidad de ingreso
+        </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="addmission__mode"
+            id="addmission__mode"
+            placeholder="No especificado"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+      </div>
+
+      <!-- Grupo:  Current situation-->
+      <div class="form__group" id="group__current__situation">
+        <label for="current__situation" class="form__label">
+          Situatión actual
+        </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="current__situation"
+            id="current__situation"
+            placeholder="Activo"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current address -->
+    <div class="form__fieldset" id="address">
+      <header class="form__fieldset-header">
+        <h3 class="form__fieldset-title">Domicilio actual</h3>
+
+        <!-- Button to modify fieldset -->
+        <button type="button" class="form__fieldset-edit" id="btn__address">
+          <i class="fa fa-edit"></i>
+        </button>
+      </header>
+
+      <!-- Grupo: Region -->
+      <div class="form__group" id="group__region">
+        <label for="region" class="form__label">Departamento</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="region"
+            id="region"
+            placeholder="Huánuco"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Departamento no encontrado</p>
+      </div>
+
+      <!-- Grupo: Province -->
+      <div class="form__group" id="group__province">
+        <label for="province" class="form__label">Provincia</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="province"
+            id="province"
+            placeholder="Huánuco"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Provincia no encontrada</p>
+      </div>
+
+      <!-- Grupo:  District-->
+      <div class="form__group" id="group__district">
+        <label for="district" class="form__label">Distrito</label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="district"
+            id="district"
+            placeholder="Amarilis"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+        <p class="form__input-error">Distrito no encontrado</p>
+      </div>
+
+      <!-- Grupo: Street -->
+      <div class="form__group" id="group__street">
+        <label for="street" class="form__label"> Dirección </label>
+        <div class="form__group-input">
+          <input
+            class="form__input"
+            type="text"
+            name="street"
+            id="street"
+            placeholder="Jr. Apurimac Mz. D Lote 10"
+            autocomplete="off"
+            readonly
+          />
+          <i class="form__check-state fas fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Observations -->
+    <div class="form__fieldset" id="observations">
+      <header class="form__fieldset-header">
+        <h3 class="form__fieldset-title">Observaciones</h3>
+      </header>
+    </div>
+  </form>
 </article>

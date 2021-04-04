@@ -11,24 +11,11 @@
   position: fixed;
   left: 0;
   top: var(--header-height);
-  bottom: var(--footer-height);
+  bottom: 0;
   width: var(--width);
   border-top: var(--border);
   border-bottom: var(--border);
   color: var(--white);
   transition: 0.4s ease-in-out all;
-}
-
-/* Footer 2 lines */
-@media screen and (max-width: 685px) {
-  .sidemenu {
-    bottom: calc(var(--footer-height) * 2);
-  }
-}
-
-/* Footer 3 lines */
-@media screen and (max-width: 340px) {
-  .sidemenu {
-    bottom: calc(var(--footer-height) * 3);
-  }
+  z-index: var(--z-index-10);
 }

@@ -29,13 +29,15 @@ document.querySelectorAll('.sideitem a').forEach(($pageLink, i, $pagesLinks) =>
     highlightItemActive($pageLink, $pagesLinks, 'sideitem-active')
     if (currentPage.name !== $pageLink.getAttribute('href').replace('#', '')) {
       setTimeout(async () => {
+        const containerPages = document.getElementById('pages')
         if (currentPage.name !== 'dashboard') {
+          containerPages.innerHTML = ''
           currentPage.styleLink.remove()
           currentPage.scriptLink.remove()
         }
         const pageLink = $pageLink.getAttribute('href').replace('#', '')
         currentPage = await getPage(pageLink)
-        renderPage(currentPage, preloader, document.getElementById('pages'))
+        renderPage(currentPage, preloader, containerPages)
       }, Math.random() * 1000)
     } else {
       preloader.remove()
@@ -51,7 +53,8 @@ document.querySelectorAll('.sideitem a').forEach(($pageLink, i, $pagesLinks) =>
 addEventListener('DOMContentLoaded', evt => {
   if (location.href.indexOf('#') === -1) return
   const pageLink = location.href.slice(location.href.indexOf('#'))
-  document.querySelectorAll('.sideitem a').forEach(link => {
-    if (link.getAttribute('href') === pageLink) link.click()
-  })
+  const link = [...document.querySelectorAll('.sideitem a')].find(
+    link => link.getAttribute('href') === pageLink
+  )
+  link ? link.click() : null
 })

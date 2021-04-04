@@ -3,9 +3,10 @@
 }
 
 .form__input {
+  min-width: 15em;
   width: 100%;
   background: var(--white);
-  border: 0.25em solid var(--white);
+  border: 0.25em solid transparent;
   border-radius: 0.25em;
   height: 2.5em;
   line-height: 2.5em;
@@ -17,6 +18,11 @@
   border: 0.25em solid var(--turquoise);
   outline: none;
   box-shadow: 0.25em 0 0.25em #a3a3a366;
+}
+
+.form__input:read-only:focus {
+  border-color: transparent;
+  box-shadow: none;
 }
 
 .form__input-error {

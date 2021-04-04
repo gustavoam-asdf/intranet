@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <script src="/src/js/middleware.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +14,8 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/css/dashboard.css" />
-    <link rel="shortcut icon" href="src/img/login.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/dashboard.css" />
+    <link rel="shortcut icon" href="./src/img/login.svg" type="image/x-icon" />
     <title>Intranet unheval</title>
   </head>
   <body>
@@ -25,7 +24,7 @@
         <picture class="brand__logo">
           <img
             class="brand__logo-img"
-            src="src/img/logo-unheval.png"
+            src="./src/img/logo-unheval.png"
             alt="Logo de la universidad"
           />
         </picture>
@@ -129,13 +128,9 @@
             </ul>
           </nav>
         </aside>
-        <div class="pages__container" id="pages"></div>
+        <div class="page__container" id="pages"></div>
       </div>
     </main>
-    <footer class="footer">
-      ©2021 Universidad Nacional Hermilio Valdizán de Huánuco. Reservados todos
-      los derechos
-    </footer>
     <script type="module" src="src/js/dashboard.js"></script>
   </body>
 </html>

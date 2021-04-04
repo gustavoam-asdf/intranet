@@ -59,11 +59,11 @@ a {
 
 @media screen and (max-width: 685px) {
   .main {
-    padding-bottom: calc(var(--header-height) * 2 / 2);
+    padding-bottom: calc(var(--footer-height) * 2 / 2);
   }
 }
 @media screen and (max-width: 340px) {
   .main {
-    padding-bottom: calc(var(--header-height) * 3 / 2);
+    padding-bottom: calc(var(--footer-height) * 3 / 2);
   }
 }

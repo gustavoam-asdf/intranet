@@ -6,6 +6,7 @@
 @import url(./group-checkbox.css);
 @import url(./group-btn-send.css);
 @import url(./message.css);
+@import url(./fieldset.css);
 
 .form__container {
   color: var(--dark-blue);
@@ -26,6 +27,7 @@
 }
 
 .form__title {
+  color: var(--dark-blue);
   margin: 0 0 0.5em;
   text-align: center;
 }

@@ -36,7 +36,6 @@ class FormFieldset extends HTMLDivElement {
       this.fieldsetId = newValue
       this.render()
     } else if (attr === 'title') {
-      this.title = newValue
       this.render()
     } else if (attr === 'editable') {
       this.editable = newValue === 'true' ? true : false

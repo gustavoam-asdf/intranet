@@ -11,11 +11,20 @@
   transition: 0.1s ease-in all;
 }
 
-.form__fieldset[editable='true'] {
-  background-color: var(--yellow);
+.form__fieldset[editable='false'] {
+  background-color: var(--light-turquoise);
 }
 
-.form__fieldset[editable='false'] {
+.form__fieldset[editable='true'] {
+  background-color: var(--pink);
+}
+
+.form__fieldset[editable='true'] .form__fieldset-edit {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.form__fieldset[editable='true'] .form__fieldset-edit:hover {
   background-color: var(--green);
 }
 

@@ -2,6 +2,7 @@
 
 :root {
   --turquoise: #038ae6;
+  --light-turquoise: #8fc2fc;
   --blue: #2058b5;
   --dark-blue: #000261;
   --light-blue: #a3c4d6;
@@ -10,7 +11,7 @@
   --wine: #6c0000;
   --white: #ebf9ff;
   --green: #1ed12d;
-  --yellow: #ffde20;
+  --pink: #ffa9a9;
   --header-height: 4em;
   --footer-height: calc(var(--header-height) / 2);
   --z-index-0: 0;

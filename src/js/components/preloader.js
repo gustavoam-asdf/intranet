@@ -4,7 +4,6 @@ class Preloader extends HTMLElement {
   constructor() {
     super()
     this.styleLink = createCSSLink('./src/css/preloader/preloader.css')
-    document.head.appendChild(this.styleLink)
   }
 
   connectedCallback() {

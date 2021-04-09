@@ -20,6 +20,11 @@
   color: var(--red);
 }
 
+.form__group-incorrect .form__input:read-only:focus {
+  border-color: var(--red);
+  box-shadow: none;
+}
+
 .form__group-incorrect .form__input-error {
   display: block;
   color: var(--red);

@@ -10,6 +10,7 @@
   --wine: #6c0000;
   --white: #ebf9ff;
   --green: #1ed12d;
+  --yellow: #ffde20;
   --header-height: 4em;
   --footer-height: calc(var(--header-height) / 2);
   --z-index-0: 0;
